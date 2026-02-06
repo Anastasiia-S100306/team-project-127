@@ -1,4 +1,4 @@
-.header {
+/* .header {
   padding: 20px 0;
 }
 .nav {
@@ -42,6 +42,98 @@
 .nav-link.active::after {
   background: #747bff;
 }
- 
+  */
 
+a {
+  text-decoration: none;
+}
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+p {
+  margin: 0;
+}
+
+.header-coffee {
+  background-color: #E0CBB4;
+}
+
+.container-coffee {
+  min-width: 320px;
+  max-width: 375px;
+  padding: 0 16px;
+}
+
+.svg-coffee {
+  margin: 18px 0;
+  width: 84px;
+}
+
+.coffee-joy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-coffee {
+  display: none;
+}
+
+.burger-coffee {
+  padding: 0;
+  border: none;
+  background-color: rgba(224, 203, 180, 1);
+}
+
+.burger-icon {
+  display: block;
+  fill: rgba(11, 8, 3, 1);
+}
+
+.button {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .container-coffee {
+    max-width: 768px;
+    padding: 18px 64px;
+  }
+
+  .svg-coffee {
+    margin: 0;
+  }
+
+  .burger-coffee {
+    display: none;
+  }
+
+  .nav-coffee {
+    display: flex;
+  }
+
+  .item-coffee-nav {
+    display: flex;
+    gap: 32px;
+    padding: 6px 0;
+  }
+
+  .link-coffee {
+    color: rgba(11, 8, 3, 1);
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 400;
+    font-family: "Quicksand";
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container-coffee {
+    max-width: 1440px;
+  }
+}
