@@ -1,11 +1,11 @@
 {
-  "name": "team-project-127",
+  "name": "project-html-css",
   "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/team-project-127/",
+    "build": "vite build --base=/project-html-css/",
     "preview": "vite preview"
   },
   "devDependencies": {
