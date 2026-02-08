@@ -5,9 +5,18 @@
   /* Colors - З макета CoffeeJoy */
   --primary-text-color: #2e2f42;   /* Основний темний */
   --accent-color: #434455;         /* Для описів та тексту */
+  --primary-text-color: #2e2f42;
+  /* Основний темний */
+  --accent-color: #434455;
+  /* Для описів та тексту */
   --white-color: #ffffff;
   --bg-color: #f4f4fd;             /* Світлий фон секцій */
   --brand-color: #4d5ae5;          /* Акцентний колір (кнопки/посилання) */
+  --bg-color: #f4f4fd;
+  /* Світлий фон секцій */
+  --brand-color: #4d5ae5;
+  /* Акцентний колір (кнопки/посилання) */
+
 
   
   font-family: var(--main-font);
@@ -15,9 +24,11 @@
   line-height: 1.5;
   font-weight: 400;
   
+
   color: var(--primary-text-color);
   background-color: var(--white-color);
 
+  
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -34,12 +45,19 @@ body {
   min-height: 100vh;
 }
 
+
 main {
   flex-grow: 1; 
+  flex-grow: 1;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--secondary-font); 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--secondary-font);
   color: var(--primary-text-color);
   margin: 0;
   font-weight: 400;
@@ -49,11 +67,13 @@ p {
   margin: 0;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
   margin: 0;
   padding: 0;
 }
+
 
 a {
   text-decoration: none;
@@ -64,7 +84,7 @@ a {
 img {
   display: block;
   max-width: 100%;
-  height: auto; 
+  height: auto;
 }
 
 button {

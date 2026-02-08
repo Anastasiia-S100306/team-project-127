@@ -1,64 +1,164 @@
 /* =========================== HEADER =========================== */
-
-.header {
-  /* У макеті хедер має бути просторим */
-  padding: 28px 0;
-  background-color: transparent; /*  колір фону з макету */
+/* .header {
+  padding: 20px 0;
 }
-
 .nav {
   display: flex;
-  align-items: center;
   justify-content: space-between;
 }
-
+.nav-logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
 .nav-list {
   display: flex;
   align-items: center;
-  /* У CoffeeJoy великі відступи між пунктами меню */
-  gap: 40px; 
+  justify-content: flex-end;
+  gap: 40px;
 }
-
 .nav-link {
   position: relative;
-  /* Використовуй змінні, щоб колір був кавовим/темним, як у дизайні */
-  color: var(--primary-text-color);
+  display: block;
   font-weight: 500;
-  transition: color var(--anim-duration) var(--anim-timing);
+  letter-spacing: 0.02em;
+  transition: 200ms ease-in;
 }
-
-/* Декоративна лінія (Елемент, що не відповідав макету) */
+.nav-link:hover,
+.nav-link:focus {
+  color: #747bff;
+}
 .nav-link::after {
   content: '';
   position: absolute;
-  /* У макеті лінія стоїть трохи нижче тексту */
-  bottom: -4px; 
-  left: 0;
-  width: 100%;
-  height: 2px; /* У макеті вона тонка
-  
-  /* ЗМІННА: тут має бути золотистий або коричневий колір з макету */
-  background-color: var(--accent-color); 
-  
-  
-  transform: scaleX(0);
-  transition: transform var(--anim-duration) var(--anim-timing);
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(100%);
+  width: 110%;
+  height: 4px;
+  border-radius: 4px;
+  transform-origin: center;
+  animation: stretch 400ms cubic-bezier(0.68, -0.55, 0.27, 1.55) 200ms both;
 }
-
-/* Стан активного посилання та наведення */
-.nav-link:hover,
-.nav-link.active {
-  color: var(--accent-color);
-}
-
-.nav-link:hover::after,
 .nav-link.active::after {
-  transform: scaleX(1);
+  background: #747bff;
+}
+  */
+
+a {
+  text-decoration: none;
 }
 
-/* Адаптивність (Breakpoints) */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+p {
+  margin: 0;
+}
+
+.header-coffee {
+  background-color: #E0CBB4;
+}
+
+.container-coffee {
+  min-width: 320px;
+  max-width: 375px;
+  padding: 0 16px;
+  margin: 0 auto;
+.container {
+  margin: 0 0;
+}
+}
+
+.svg-coffee {
+  margin: 18px 0;
+  width: 84px;
+}
+
+.coffee-joy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-coffee {
+  display: none;
+}
+
+.burger-coffee {
+  padding: 0;
+  border: none;
+  background-color: rgba(224, 203, 180, 1);
+}
+
+.burger-icon {
+  display: block;
+  fill: rgba(11, 8, 3, 1);
+}
+
+.button {
+  cursor: pointer;
+}
+
 @media screen and (min-width: 768px) {
-  .header {
-    padding: 32px 0; /* Ще більше простору на планшеті/десктопі */
+  .container-coffee {
+  .container {
+    max-width: 768px;
+    padding: 18px 64px;
+  }
+}
+
+  .svg-coffee {
+    margin: 0;
+  }
+
+  .burger-coffee {
+    display: none;
+  }
+
+  .nav-coffee {
+    display: flex;
+  }
+
+  .item-coffee-nav {
+    display: flex;
+    gap: 32px;
+    padding: 6px 0;
+  }
+
+  .link-coffee {
+    color: rgba(11, 8, 3, 1);
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 400;
+    font-family: "Quicksand";
+  }
+
+  .link-coffee.current:focus,
+  .link-coffee.current:hover {
+    color: #404bbf;
+    position: relative;
+  }
+
+  .link-coffee.current::after {
+    content: "";
+    width: 100%;
+    height: px;
+    border-radius: 2px;
+    background-color: #404bbf;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container-coffee 
+  .container {
+    max-width: 1440px;
   }
 }
