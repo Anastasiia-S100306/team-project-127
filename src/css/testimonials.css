@@ -42,7 +42,7 @@
   font-size: 18px;
   font-weight: 400;
   line-height: 1.5;
-  margin-bottom: 24px;
+  margin-bottom: 38px;
 }
 
 .review-author{
@@ -95,5 +95,5 @@
     flex-basis: calc((100% - 72px) / 4);
 
   }
-  
+
 }
