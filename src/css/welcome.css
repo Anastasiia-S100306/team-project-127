@@ -1,52 +1,113 @@
-/* =========================== WELCOME SECTION =========================== */
-
 .welcome {
-
-  padding-top: var(--section-padding-mobile);
-  padding-bottom: var(--section-padding-mobile);
-  background-color: var(--white-color);
+    padding-top: var(--section-padding-mobile);
+    padding-bottom: var(--section-padding-mobile);
+    background-color: var(--welcome-bg, #e0cbb4);
 }
 
 .welcome-container {
-  /* Центруємо весь контент секції */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 24px;
 }
 
 .welcome-subtitle {
-  /* Маленький заголовок над основним */
-  color: var(--accent-color);
-  font-family: var(--secondary-font);
-  text-transform: uppercase;
-  margin-bottom: var(--element-margin-small);
+    color: var(--accent-color);
+    font-family: var(--secondary-font);
+    text-transform: uppercase;
+    margin: 0;
 }
 
 .welcome-title {
-  /* Головний заголовок секції */
-  color: var(--primary-text-color);
-  margin-bottom: var(--element-margin-medium);
+    color: var(--primary-text-color);
+    margin: 0;
 }
 
 .welcome-text {
-  /* Опис, обмежуємо ширину для зручності читання */
-  max-width: var(--form-max-width);
-  margin-bottom: var(--element-margin-large);
+    max-width: var(--form-max-width);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
-/* RESPONSIVE ЛОГІКА */
+.welcome-text p {
+    margin: 0;
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--primary-text-color);
+}
+
+.find-location {
+    font-family: var(--secondary-font);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 10px 24px;
+    border-radius: 100px;
+    background: #6f4e37;
+    color: #fff;
+    text-decoration: none;
+    box-shadow:
+        0 1px 2px 0 rgba(11, 8, 3, 0.05),
+        inset 0 -2px 1px 0 rgba(0, 0, 0, 0.2),
+        inset 0 0 0 1px rgba(11, 8, 3, 0.15),
+        inset 0 2px 1px 0 rgba(255, 255, 255, 0.25),
+        inset 0 32px 24px 0 rgba(255, 255, 255, 0.05);
+}
+
+.find-location:hover,
+.find-location:focus-visible {
+    opacity: 0.9;
+}
+
+.find-location:focus-visible {
+    outline: 2px solid #ffe8c3;
+    outline-offset: 2px;
+}
+
+.welcome-media {
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 24px;
+}
+
+.welcome-image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
 
 @media screen and (min-width: 768px) {
-  .welcome {
-    padding-top: var(--section-padding-tablet);
-    padding-bottom: var(--section-padding-tablet);
-  }
+    .welcome {
+        padding-top: var(--section-padding-tablet);
+        padding-bottom: var(--section-padding-tablet);
+    }
+
+    .welcome-container {
+        gap: 32px;
+    }
+
+    .welcome-media {
+        border-radius: 40px;
+    }
 }
 
 @media screen and (min-width: 1440px) {
-  .welcome {
-    padding-top: var(--section-padding-desktop);
-    padding-bottom: var(--section-padding-desktop);
-  }
+    .welcome {
+        padding-top: var(--section-padding-desktop);
+        padding-bottom: var(--section-padding-desktop);
+    }
+
+    .welcome-media {
+        border-radius: 0;
+    }
 }
