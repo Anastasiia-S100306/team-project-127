@@ -11,7 +11,7 @@
 .reviews-list{
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: var(--card-gap-mobile);
 }
 
 .review-item{
@@ -26,9 +26,9 @@
   gap: 4px;
   margin-bottom: 24px;
 }
+
 .icon-star {
   fill: transparent;
-
   stroke: #0B0803;
   stroke-width: 1px;
 }
@@ -37,6 +37,7 @@
   fill: #0B0803;
   stroke: none;
 }
+
 .review-text{
   color: #0B0803;
   font-size: 18px;
