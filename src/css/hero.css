@@ -1,0 +1,53 @@
+/* =========================== HERO SECTION =========================== */
+
+.hero {
+  /* Гнучка висота: мінімум на весь екран або за контентом */
+  min-height: 600px;
+  padding: 160px 0; /* Великі відступи для  тексту */
+  
+  /* Робота з фоном  */
+  background-color: #111; /* Резервний колір */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+                    url('../img/hero-bg.webp'); /* Шлях до картинки */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  
+  text-align: center;
+}
+
+.hero-title {
+  margin-bottom: 28px;
+  /* Використовуй змінні для шрифтів та кольорів */
+  font-family: var(--secondary-font);
+  color: var(--white-color);
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+/* Обмеження ширини тексту для кращої читабельності */
+.hero-text {
+  max-width: 500px;
+  margin: 0 auto 40px;
+  color: var(--white-color);
+  opacity: 0.9;
+}
+
+/* RESPONSIVE */
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding: 200px 0;
+  }
+  
+  .hero-title {
+    font-size: 40px; /* Збільшення шрифту для планшета */
+    /* Збільшення шрифту для планшета */
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hero {
+    min-height: 800px; /* Для великих моніторів */
+  }
+}

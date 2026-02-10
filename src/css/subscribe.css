@@ -1,0 +1,76 @@
+/* =========================== SUBSCRIBE SECTION =========================== */
+
+.subscribe {
+  /* Використовуємо системні відступи секції */
+  padding-top: var(--section-padding-mobile);
+  padding-bottom: var(--section-padding-mobile);
+  background-color: var(--accent-color); /* Темний або золотистий фон */
+  text-align: center;
+}
+
+.subscribe-title {
+  margin-bottom: var(--element-margin-medium);
+  color: var(--white-color);
+  font-family: var(--secondary-font);
+  text-transform: uppercase;
+}
+
+.subscribe-form {
+  /* Робимо форму гнучкою */
+  display: flex;
+  flex-direction: column;
+  gap: var(--form-gap-mobile);
+  max-width: var(--form-max-width); /* Обмежуємо ширину, щоб не розповзлася */
+  margin: 0 auto;
+}
+
+.subscribe-input {
+  /* Інпут займає всю доступну ширину */
+  width: 100%;
+  padding: var(--input-padding);
+  background-color: transparent;
+  border: 1px solid var(--white-color);
+  border-radius: var(--main-border-radius);
+  color: var(--white-color);
+  outline: none;
+}
+
+.subscribe-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.subscribe-btn {
+  /* Кнопка підписки */
+  padding: var(--input-padding);
+  background-color: var(--white-color);
+  color: var(--accent-color);
+  border: none;
+  border-radius: var(--main-border-radius);
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color var(--anim-duration) var(--anim-timing);
+}
+
+/* RESPONSIVE */
+
+@media screen and (min-width: 768px) {
+  .subscribe-form {
+    /* На планшеті ставимо інпут і кнопку в один рядок */
+    flex-direction: row;
+    gap: 0; /* Прибираємо проміжок, якщо вони мають зливатися */
+  }
+
+  .subscribe-input {
+    /* Заокруглюємо тільки ліві кути для ефекту злиття */
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .subscribe-btn {
+    /* Заокруглюємо тільки праві кути */
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding-left: var(--button-side-padding);
+    padding-right: var(--button-side-padding);
+  }
+}

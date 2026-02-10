@@ -1,0 +1,76 @@
+/* =========================== TESTIMONIALS SECTION =========================== */
+
+.testimonials {
+  
+  padding-top: var(--section-padding-mobile);
+  padding-bottom: var(--section-padding-mobile);
+  background-color: var(--light-bg-color);
+}
+
+.testimonials-title {
+  text-align: center;
+  margin-bottom: var(--element-margin-large);
+  font-family: var(--secondary-font);
+  color: var(--primary-text-color);
+  text-transform: uppercase;
+}
+
+.testimonials-list {
+  
+  display: flex;
+  flex-direction: column;
+  gap: var(--card-gap-mobile);
+}
+
+.testimonials-item {
+  /* Кожна картка відгуку */
+  background-color: var(--white-color);
+  border-radius: var(--main-border-radius);
+  padding: var(--card-inner-padding);
+  box-shadow: var(--main-shadow);
+  
+  /* Гарантуємо, що всі картки в ряду будуть однієї висоти */
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonials-text {
+  font-style: italic;
+  line-height: 1.6;
+  margin-bottom: var(--element-margin-small);
+  flex-grow: 1; /* Розтягує текст, щоб автор був завжди внизу */
+}
+
+.testimonials-author {
+  font-weight: 700;
+  color: var(--accent-color);
+  text-transform: uppercase;
+}
+
+/* RESPONSIVE (Логіка адаптації) */
+
+@media screen and (min-width: 768px) {
+  .testimonials {
+    padding-top: var(--section-padding-tablet);
+    padding-bottom: var(--section-padding-tablet);
+  }
+
+  .testimonials-list {
+    /* На планшеті: 2 відгуки поруч, порівну */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--card-gap-tablet);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .testimonials {
+    padding-top: var(--section-padding-desktop);
+    padding-bottom: var(--section-padding-desktop);
+  }
+
+  .testimonials-list {
+    /* На десктопі: 3 відгуки в ряд */
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

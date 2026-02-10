@@ -1,4 +1,4 @@
-@keyframes slide {
+@keyframes cj-slide {
   from {
     transform: translateX(-140%) translateY(-50%);
   }
@@ -6,7 +6,7 @@
     transform: translateX(-104%) translateY(-50%);
   }
 }
-@keyframes stretch {
+@keyframes cj-stretch {
   from {
     opacity: 0;
     transform: translateX(-50%) translateY(100%) scale(0.2);

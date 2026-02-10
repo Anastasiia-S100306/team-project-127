@@ -1,0 +1,67 @@
+/* =========================== MOBILE MENU =========================== */
+
+.mobile-menu {
+  /* Меню має бути на весь екран */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  
+  /* Колір фону беремо зі змінних нашого бренду */
+  background-color: var(--mobile-menu-bg);
+  
+  /* Початковий стан: меню приховане праворуч */
+  transform: translateX(100%);
+  transition: transform var(--anim-duration) var(--anim-timing);
+  
+  /* Рівень над усім контентом */
+  z-index: 100;
+  
+  /* Внутрішні відступи для зручності */
+  padding: var(--section-padding-mobile);
+}
+
+/* Стан, коли меню відкрите (додається через JS) */
+.mobile-menu.is-open {
+  transform: translateX(0);
+}
+
+.mobile-menu-container {
+  /* Вирівнюємо контент по вертикалі */
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.menu-close-btn {
+  /* Кнопка закриття завжди у верхньому куті */
+  margin-left: auto;
+  background: transparent;
+  border: none;
+  color: var(--primary-text-color);
+}
+
+.mobile-nav-list {
+  /* Список посилань по центру або з великим кроком */
+  display: flex;
+  flex-direction: column;
+  gap: var(--menu-item-gap); 
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.mobile-nav-link {
+  font-family: var(--secondary-font);
+  font-size: var(--menu-font-size);
+  color: var(--primary-text-color);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/* Прибираємо меню на десктопі */
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+}

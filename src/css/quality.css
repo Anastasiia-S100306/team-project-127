@@ -1,0 +1,66 @@
+/* =========================== QUALITY SECTION =========================== */
+
+.quality {
+  /* Відступи беремо загальні для всього сайту */
+  padding-top: var(--section-padding-mobile);
+  padding-bottom: var(--section-padding-mobile);
+}
+
+.quality-list {
+  /* Список карток: гнучкий контейнер */
+  display: flex;
+  flex-direction: column;
+  /* Відступ між картками зі змінних проекту */
+  gap: var(--card-gap-mobile);
+}
+
+.quality-item {
+  /* Картка підлаштовується під контент */
+  text-align: center;
+  background-color: var(--card-bg-color);
+  border-radius: var(--main-border-radius);
+  padding: var(--card-inner-padding);
+}
+
+.quality-icon-wrapper {
+  /* Іконка завжди в центрі */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--accent-color);
+  margin-bottom: var(--element-margin-small);
+}
+
+.quality-subtitle {
+  font-family: var(--secondary-font);
+  color: var(--primary-text-color);
+  text-transform: uppercase;
+}
+
+/* RESPONSIVE (Адаптація під макет) */
+
+@media screen and (min-width: 768px) {
+  .quality {
+    padding-top: var(--section-padding-tablet);
+    padding-bottom: var(--section-padding-tablet);
+  }
+
+  .quality-list {
+    /* Перетворюємо список на сітку: 2 колонки */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--card-gap-tablet);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .quality {
+    padding-top: var(--section-padding-desktop);
+    padding-bottom: var(--section-padding-desktop);
+  }
+
+  .quality-list {
+    /* На десктопі: 3 колонки порівну */
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
