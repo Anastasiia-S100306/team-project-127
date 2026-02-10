@@ -1,76 +1,105 @@
 /* =========================== TESTIMONIALS SECTION =========================== */
-
-.testimonials {
-  
-  padding-top: var(--section-padding-mobile);
-  padding-bottom: var(--section-padding-mobile);
-  background-color: var(--light-bg-color);
+ .reviews {
+  background-color: #f1e4d1;
+  padding-top: 40px;
+ }
+      
+.reviews-title{
+  color: #0B0803;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  margin-bottom: 24px;
 }
 
-.testimonials-title {
-  text-align: center;
-  margin-bottom: var(--element-margin-large);
-  font-family: var(--secondary-font);
-  color: var(--primary-text-color);
-  text-transform: uppercase;
-}
-
-.testimonials-list {
-  
+.reviews-list{
   display: flex;
   flex-direction: column;
-  gap: var(--card-gap-mobile);
+  gap: 24px;
 }
 
-.testimonials-item {
-  /* Кожна картка відгуку */
-  background-color: var(--white-color);
-  border-radius: var(--main-border-radius);
-  padding: var(--card-inner-padding);
-  box-shadow: var(--main-shadow);
-  
-  /* Гарантуємо, що всі картки в ряду будуть однієї висоти */
+.review-item{
+  border: 1px solid rgba(11, 8, 3, 0.15);
+  background-color: #C29D84;
+  border-radius: 32px;
+  padding: 32px;
+}
+
+.review-rating{
+  display: flex;
+  gap: 4px;
+  margin-bottom: 24px;
+}
+
+.icon-star {
+  fill: transparent;
+  stroke: #0B0803;
+  stroke-width: 1px;
+}
+
+.icon-star.filled {
+  fill: #0B0803;
+  stroke: none;
+}
+
+.review-text{
+  color: #0B0803;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 38px;
+}
+
+.review-author{
+  color: #0B0803;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+/* Styles for Tablet devices */
+@media only screen and (min-width: 768px) {
+  .container{
+    padding: 0 32px;
+  }
+  .reviews-list{
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  .review-item{
+    display: flex;
+    flex-direction: column;
+    max-width: 340px;
+    flex-basis: calc((100% - 24px) / 2);
+  }
+  .text-block {
   display: flex;
   flex-direction: column;
-}
-
-.testimonials-text {
-  font-style: italic;
-  line-height: 1.6;
-  margin-bottom: var(--element-margin-small);
-  flex-grow: 1; /* Розтягує текст, щоб автор був завжди внизу */
-}
-
-.testimonials-author {
-  font-weight: 700;
-  color: var(--accent-color);
-  text-transform: uppercase;
-}
-
-/* RESPONSIVE (Логіка адаптації) */
-
-@media screen and (min-width: 768px) {
-  .testimonials {
-    padding-top: var(--section-padding-tablet);
-    padding-bottom: var(--section-padding-tablet);
+  flex-grow: 1; 
   }
-
-  .testimonials-list {
-    /* На планшеті: 2 відгуки поруч, порівну */
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: var(--card-gap-tablet);
+  .review-author {
+    margin-top: auto;
+    font-weight: bold;
   }
 }
 
-@media screen and (min-width: 1440px) {
-  .testimonials {
-    padding-top: var(--section-padding-desktop);
-    padding-bottom: var(--section-padding-desktop);
+
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1440px) {
+  .container{
+    padding: 0 64px;
+  }
+.reviews-title {
+    font-size: 48px;
+    max-width: 416px;
+}
+.review-item {
+    max-width: 310px;
+    flex-basis: calc((100% - 72px) / 4);
+
   }
 
-  .testimonials-list {
-    /* На десктопі: 3 відгуки в ряд */
-    grid-template-columns: repeat(3, 1fr);
-  }
 }

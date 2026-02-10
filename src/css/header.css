@@ -1,77 +1,9 @@
-/* =========================== HEADER =========================== */
-/* .header {
-  padding: 20px 0;
-}
-.nav {
-  display: flex;
-  justify-content: space-between;
-}
-.nav-logo {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-.nav-list {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 40px;
-}
-.nav-link {
-  position: relative;
-  display: block;
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  transition: 200ms ease-in;
-}
-.nav-link:hover,
-.nav-link:focus {
-  color: #747bff;
-}
-.nav-link::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%) translateY(100%);
-  width: 110%;
-  height: 4px;
-  border-radius: 4px;
-  transform-origin: center;
-  animation: stretch 400ms cubic-bezier(0.68, -0.55, 0.27, 1.55) 200ms both;
-}
-.nav-link.active::after {
-  background: #747bff;
-}
-  */
-
-a {
-  text-decoration: none;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-h1,
-p {
-  margin: 0;
-}
-
 .header-coffee {
   background-color: #E0CBB4;
 }
 
-.container-coffee {
-  min-width: 320px;
-  max-width: 375px;
-  padding: 0 16px;
-  margin: 0 auto;
 .container {
   margin: 0 0;
-}
 }
 
 .svg-coffee {
@@ -105,12 +37,10 @@ p {
 }
 
 @media screen and (min-width: 768px) {
-  .container-coffee {
   .container {
     max-width: 768px;
     padding: 18px 64px;
   }
-}
 
   .svg-coffee {
     margin: 0;
@@ -137,27 +67,9 @@ p {
     font-weight: 400;
     font-family: "Quicksand";
   }
-
-  .link-coffee.current:focus,
-  .link-coffee.current:hover {
-    color: #404bbf;
-    position: relative;
-  }
-
-  .link-coffee.current::after {
-    content: "";
-    width: 100%;
-    height: px;
-    border-radius: 2px;
-    background-color: #404bbf;
-    position: absolute;
-    left: 0;
-    bottom: -1px;
-  }
 }
 
 @media screen and (min-width: 1440px) {
-  .container-coffee 
   .container {
     max-width: 1440px;
   }

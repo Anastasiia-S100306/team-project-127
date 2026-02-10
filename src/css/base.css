@@ -18,7 +18,23 @@
   /* Акцентний колір (кнопки/посилання) */
 
 
+  /* Subscribe Section */
   
+  --subscribe-bg: #E0CBB4;
+  --section-padding-mobile: 64px;
+  
+  --form-gap-mobile: 24px;
+  --form-max-width: 288px;
+  --input-padding: 8px 12px;
+  
+  --button-side-padding: 24px;
+  
+  --element-margin-medium: 16px;
+
+  --subscribe-gap-title: 24px;
+  --subscribe-gap-text: 32px;
+  --subscribe-gap-form: 16px;
+
   font-family: var(--main-font);
   font-size: 16px;
   line-height: 1.5;

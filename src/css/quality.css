@@ -1,66 +1,146 @@
-/* =========================== QUALITY SECTION =========================== */
-
-.quality {
-  /* Відступи беремо загальні для всього сайту */
-  padding-top: var(--section-padding-mobile);
-  padding-bottom: var(--section-padding-mobile);
+.quality-page {
+  background-color: #e0cbb4;
+  padding: 64px 0;
 }
 
-.quality-list {
-  /* Список карток: гнучкий контейнер */
+.quality-page-container {
   display: flex;
   flex-direction: column;
-  /* Відступ між картками зі змінних проекту */
-  gap: var(--card-gap-mobile);
-}
-
-.quality-item {
-  /* Картка підлаштовується під контент */
-  text-align: center;
-  background-color: var(--card-bg-color);
-  border-radius: var(--main-border-radius);
-  padding: var(--card-inner-padding);
-}
-
-.quality-icon-wrapper {
-  /* Іконка завжди в центрі */
-  display: flex;
-  justify-content: center;
   align-items: center;
-  color: var(--accent-color);
-  margin-bottom: var(--element-margin-small);
 }
 
-.quality-subtitle {
-  font-family: var(--secondary-font);
-  color: var(--primary-text-color);
-  text-transform: uppercase;
+.quality-section-label {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: #0b0803;
+  margin-bottom: 16px;
 }
 
-/* RESPONSIVE (Адаптація під макет) */
+.quality-page-title {
+  font-family: 'Aboreto', sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: #0b0803;
+  margin-bottom: 24px;
+}
 
-@media screen and (min-width: 768px) {
-  .quality {
-    padding-top: var(--section-padding-tablet);
-    padding-bottom: var(--section-padding-tablet);
+.quality-page-subtitle {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+  color: #0b0803;
+  margin-bottom: 32px;
+}
+
+.quality-page-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.quality-page-item {
+  width: 100%;
+}
+
+.quality-page-list img {
+  object-fit: cover;
+  display: block;
+  border-radius: 32px;
+  margin: 0 auto;
+}
+
+.quality-page-item-title {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  color: #0b0803;
+  padding-top: 32px;
+  width: 100%;
+}
+
+.quality-page-item-text {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: #0b0803;
+  padding-top: 8px;
+}
+
+@media only screen and (min-width: 768px) {
+  .quality-page > .quality-page-container {
+    padding: 0 32px;
   }
 
-  .quality-list {
-    /* Перетворюємо список на сітку: 2 колонки */
+  .quality-page-title {
+    max-width: 452px;
+  }
+
+  .quality-page-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: var(--card-gap-tablet);
+  }
+
+  .quality-page-coffee-item-title {
+    max-width: 284px;
+    margin: 0 auto;
+  }
+
+  .quality-page-coffee-item-text {
+    max-width: 294px;
+    margin: 0 auto;
+  }
+
+  .card-three {
+    grid-column: span 2;
+  }
+
+  .quality-page-atmosphere-item-text {
+    max-width: 440px;
+    margin: 0 auto;
   }
 }
 
-@media screen and (min-width: 1440px) {
-  .quality {
-    padding-top: var(--section-padding-desktop);
-    padding-bottom: var(--section-padding-desktop);
+@media only screen and (min-width: 1440px) {
+  .quality-page > .quality-page-container {
+    padding: 0 64px;
   }
 
-  .quality-list {
-    /* На десктопі: 3 колонки порівну */
+  .quality-page-title {
+    font-size: 48px;
+    max-width: 768px;
+  }
+
+  .quality-page-subtitle {
+    max-width: 768px;
+  }
+
+  .quality-page-list {
+    display: flex;
+    flex-direction: row;
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .quality-page-coffee-item-title {
+    max-width: none;
+  }
+
+  .quality-page-coffee-item-text {
+    max-width: none;
+  }
+
+  .quality-page-atmosphere-item-text {
+    max-width: none;
   }
 }
