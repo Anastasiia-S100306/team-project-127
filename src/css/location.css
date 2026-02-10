@@ -1,0 +1,64 @@
+/* =========================== LOCATION SECTION =========================== */
+
+.location {
+  padding-top: var(--section-padding-mobile);
+  padding-bottom: var(--section-padding-mobile);
+}
+
+.location-container {
+  /* Головний контейнер для позиціонування контенту та карти */
+  display: flex;
+  flex-direction: column; /* Мобільна версія: все в стовпчик */
+}
+
+.location-content {
+  /* Контейнер для текстових блоків (заголовок, адреса) */
+  display: flex;
+  flex-direction: column;
+}
+
+.location-map-wrapper {
+  /* Обгортка для карти, щоб контролювати її пропорції */
+  width: 100%;
+  overflow: hidden; /* Щоб карта не виходила за межі радіусів */
+}
+
+.location-map-wrapper iframe {
+  /* Сама карта має заповнювати весь простір обгортки */
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* RESPONSIVE ЛОГІКА */
+
+@media screen and (min-width: 768px) {
+  .location {
+    padding-top: var(--section-padding-tablet);
+    padding-bottom: var(--section-padding-tablet);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .location {
+    padding-top: var(--section-padding-desktop);
+    padding-bottom: var(--section-padding-desktop);
+  }
+
+  .location-container {
+    /* На десктопі змінюємо напрямок на горизонтальний */
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .location-content {
+    /* Текст займає свою частину гнучкої сітки */
+    flex: 1; 
+  }
+
+  .location-map-wrapper {
+    /* Карта займає свою частину гнучкої сітки */
+    flex: 1; 
+  }
+}
