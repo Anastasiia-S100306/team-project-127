@@ -1,65 +1,80 @@
 /* =========================== MOBILE MENU =========================== */
-
+html {
+  scroll-behavior: smooth;
+}
 .mobile-menu {
-  /* Меню має бути на весь екран */
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  
-  /* Колір фону беремо зі змінних нашого бренду */
-  background-color: var(--mobile-menu-bg);
-  
-  /* Початковий стан: меню приховане праворуч */
-  transform: translateX(100%);
-  transition: transform var(--anim-duration) var(--anim-timing);
-  
-  /* Рівень над усім контентом */
-  z-index: 100;
-  
-  /* Внутрішні відступи для зручності */
-  padding: var(--section-padding-mobile);
-}
+  background-color: #e0cbb4;
 
-/* Стан, коли меню відкрите (додається через JS) */
+  transform: translateX(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  z-index: 100;
+}
 .mobile-menu.is-open {
   transform: translateX(0);
 }
-
 .mobile-menu-container {
-  /* Вирівнюємо контент по вертикалі */
+  position: relative;
+  padding-top: 72px;
   display: flex;
   flex-direction: column;
   height: 100%;
 }
-
+.btn-logo {
+  position: absolute;
+  top: 18px;
+  left: 16px;
+  padding: 0px 10px;
+}
 .menu-close-btn {
-  /* Кнопка закриття завжди у верхньому куті */
-  margin-left: auto;
-  background: transparent;
-  border: none;
-  color: var(--primary-text-color);
+  position: absolute;
+  min-height: 48px;
+  min-width: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+
+  outline: none;
+
+  top: 12px;
+  right: 16px;
+
+  /* margin-left: auto; */
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: transparent;
+
+  color: #0b0803;
+}
+.icon-close {
+  fill: #0b0803;
+}
+.menu-close-btn:hover,
+.menu-close-btn:focus {
+  background-color: #c29d84;
+  border-radius: 50%;
 }
 
-.mobile-nav-list {
-  /* Список посилань по центру або з великим кроком */
+.mobile-nav-items {
   display: flex;
   flex-direction: column;
-  gap: var(--menu-item-gap); 
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
   margin-top: auto;
   margin-bottom: auto;
 }
 
 .mobile-nav-link {
-  font-family: var(--secondary-font);
-  font-size: var(--menu-font-size);
-  color: var(--primary-text-color);
-  text-transform: uppercase;
-  text-decoration: none;
+  color: #0b0803;
 }
 
-/* Прибираємо меню на десктопі */
 @media screen and (min-width: 768px) {
   .mobile-menu {
     display: none;
