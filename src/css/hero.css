@@ -4,20 +4,20 @@
     background-size: cover;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5),
             rgba(0, 0, 0, 0.5)),
-        url(../img/fon-desktop1x.jpg);
+        url(../img/fon-mobile1x.jpg);
 }
 
 @media (min-resolution: 192dpi) {
     .headline-section {
         background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5),
                 rgba(0, 0, 0, 0.5)),
-            url(../img/fon-desktop2x.jpg);
+            url(../img/fon-mobile2x.jpg);
     }
 }
 
 .main-container {
     width: 256px;
-    padding: 108px 32px;
+    padding: 108px 0;
 }
 
 .headline {
@@ -69,6 +69,22 @@
 }
 
 @media screen and (min-width: 768px) {
+    .headline-section {
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)),
+            url(../img/fon-tablet1x.jpg);
+    }
+
+
+    @media (min-resolution: 192dpi) {
+        .headline-section {
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5),
+                    rgba(0, 0, 0, 0.5)),
+                url(../img/fon-tablet2x.jpg);
+        }
+    }
+
+
     .main-container {
         width: 100%;
         padding: 312px 176px 312px 32px;
@@ -84,6 +100,21 @@
 }
 
 @media screen and (min-width: 1440px) {
+    .headline-section {
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)),
+            url(../img/fon-desktop1x.jpg);
+    }
+
+    @media (min-resolution: 192dpi) {
+        .headline-section {
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5),
+                    rgba(0, 0, 0, 0.5)),
+                url(../img/fon-desktop2x.jpg);
+        }
+    }
+
+
     .main-container {
         padding: 259px 816px 259px 64px;
     }
