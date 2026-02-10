@@ -1,4 +1,4 @@
-/* =========================== SUBSCRIBE SECTION =========================== */
+/* SUBSCRIBE SECTION  */
 
 .subscribe {
   /* Використовуємо системні відступи секції */
@@ -7,8 +7,22 @@
   background-color: var(--subscribe-bg); /* Темний або золотистий фон */
 }
 
-.subscribe-title {
+@media screen and (min-width: 768px) {
+  .subscribe {
+    padding-top: 64px;
+    padding-bottom: 64px;
+    padding-left: 0;
+    padding-right: 0;
+  }
 
+  .subscribe .container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+.subscribe-title {
+  margin-bottom: 24px;
   font-family: var(--secondary-font);
   font-size: 36px;
   line-height: 1.2;
@@ -19,10 +33,19 @@
 }
 
 .subscribe-form {
-  /* Робимо форму гнучкою */
   display: flex;
   flex-direction: column;
   gap: var(--form-gap-mobile);
+  margin-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe-form {
+    flex-direction: row;
+    gap: 24px;
+    align-items: center;
+    max-width: 522px;
+  }
 }
 
 .subscribe-input {
@@ -46,6 +69,12 @@
 
 .subscribe-input::placeholder {
   color: rgba(11, 8, 3, 0.5);
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe-input {
+    flex-grow: 1;
+  }
 }
 
 .subscribe-btn {
@@ -83,27 +112,12 @@
 .subscribe-btn:focus {
   filter: brightness(0.95);
 }
-/* RESPONSIVE */
 
 @media screen and (min-width: 768px) {
-  .subscribe-form {
-    /* На планшеті ставимо інпут і кнопку в один рядок */
-    flex-direction: row;
-    gap: 0; /* Прибираємо проміжок, якщо вони мають зливатися */
-  }
-
-  .subscribe-input {
-    /* Заокруглюємо тільки ліві кути для ефекту злиття */
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-  }
-
   .subscribe-btn {
-    /* Заокруглюємо тільки праві кути */
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    padding-left: var(--button-side-padding);
-    padding-right: var(--button-side-padding);
+    width: auto;
+    padding: 10px 24px;
+    gap: 12px;
   }
 }
 
@@ -122,7 +136,7 @@
 .subscribe-content {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  
 }
 
 .subscribe-text {
@@ -130,7 +144,7 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 1.5;
-
+  margin-bottom: 32px;
   color: #0B0803;
 }
 
@@ -140,14 +154,117 @@
   height: 400px;
 }
 
+@media screen and (min-width: 768px) {
+  .subscribe-image-wrapper {
+    width: 704px;
+    height: 400px;
+  }
+}
+
 .subscribe-container {
   display: flex;
   flex-direction: column;
   gap: 32px;
 }
 
+@media screen and (min-width: 768px) {
+  .subscribe-container {
+    max-width: 704px;
+    margin: 0 auto;
+  }
+}
+
 .subscribe-icon {
   width: 13px;
   height: 12px;
   fill: currentColor;
+}
+
+/*  DESKTOP */
+
+@media screen and (min-width: 1440px) {
+
+  .subscribe .container {
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+
+  .subscribe {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  .subscribe-container {
+    flex-direction: row;
+    align-items: center;
+
+    max-width: none;
+    margin: 0;
+    width: 100%;
+
+    gap: 32px;
+
+    justify-content: flex-start;
+  }
+
+  .subscribe-content {
+    flex: 0 0 640px;
+    width: 640px;
+  }
+
+  .subscribe-image-wrapper {
+    flex: 0 0 640px;
+    width: 640px;
+    height: 400px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .subscribe-form {
+    gap: 16px;
+    max-width: 513px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+
+  .subscribe .container {
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+
+  .subscribe-container {
+    justify-content: flex-start;
+    gap: 32px;
+    flex-wrap: nowrap;
+
+    max-width: none;
+    margin: 0;
+    width: 100%;
+  }
+
+  .subscribe-content {
+    flex: 0 0 640px;
+  }
+
+  .subscribe-image-wrapper {
+    flex: 0 0 640px;
+    width: 640px;
+    height: 400px;
+  }
+
+  .subscribe-form {
+    gap: 16px;
+    max-width: 513px;
+  }
+
+  .subscribe-terms {
+    max-width: 513px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .subscribe-title {
+    font-size: 48px;
+  }
 }

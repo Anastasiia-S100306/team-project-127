@@ -22,6 +22,10 @@
   
   --element-margin-medium: 16px;
 
+  --subscribe-gap-title: 24px;
+  --subscribe-gap-text: 32px;
+  --subscribe-gap-form: 16px;
+
   font-family: var(--main-font);
   font-size: 16px;
   line-height: 1.5;
