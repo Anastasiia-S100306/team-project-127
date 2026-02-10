@@ -1,4 +1,11 @@
 /* =========================== TESTIMONIALS SECTION =========================== */
+section.testimonials {
+  background-color: #f1e4d1;
+  padding-top; 40px;
+  padding-bottom: 40px;
+
+
+
 .reviews-title{
   color: #0B0803;
   font-size: 36px;
