@@ -1,4 +1,9 @@
 /* =========================== TESTIMONIALS SECTION =========================== */
+ .reviews {
+  background-color: #f1e4d1;
+  padding-top: 40px;
+ }
+      
 .reviews-title{
   color: #0B0803;
   font-size: 36px;
@@ -11,7 +16,7 @@
 .reviews-list{
   display: flex;
   flex-direction: column;
-  gap: var(--card-gap-mobile);
+  gap: 24px;
 }
 
 .review-item{
