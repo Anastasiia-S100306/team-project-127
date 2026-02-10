@@ -1,4 +1,104 @@
-/* =========================== LOCATION SECTION =========================== */
+.location {
+  padding: 64px 16px;
+width: 100%;
+background: var(--color-scheme-1-background);
+}
+:root {
+	--color-scheme-1-background: var(--color-coffee-lighter);
+	--color-neutral-darkest: #0b0803;
+	--color-scheme-1-border: var(--opacity-neutral-darkest-15);
+	--color-scheme-1-text: var(--color-neutral-darkest);
+	--color-neutral-lighter: #dad9d9;
+	--color-white: #fff;
+	--color-neutral-lightest: #f2f2f2;
+	--color-neutral-light: #b5b4b3;
+	--color-neutral: #858381;
+	--color-neutral-dark: #54524e;
+	--color-neutral-darker: #23201c;
+	--opacity-transparent: rgba(255, 255, 255, 0);
+	--color-scheme-1-foreground: var(--color-coffee-light);
+	--color-scheme-1-accent: var(--color-neutral-darkest);
+	--opacity-white-5: rgba(255, 255, 255, 0.05);
+	--opacity-white-10: rgba(255, 255, 255, 0.1);
+	--opacity-white-15: rgba(255, 255, 255, 0.15);
+	--opacity-white-20: rgba(255, 255, 255, 0.2);
+	--opacity-white-30: rgba(255, 255, 255, 0.3);
+	--opacity-white-40: rgba(255, 255, 255, 0.4);
+	--opacity-white-50: rgba(255, 255, 255, 0.5);
+	--opacity-white-60: rgba(255, 255, 255, 0.6);
+	--opacity-neutral-darkest-5: rgba(11, 8, 3, 0.05);
+	--opacity-neutral-darkest-10: rgba(11, 8, 3, 0.1);
+	--opacity-neutral-darkest-15: rgba(11, 8, 3, 0.15);
+	--opacity-neutral-darkest-20: rgba(11, 8, 3, 0.2);
+	--opacity-neutral-darkest-30: rgba(11, 8, 3, 0.3);
+	--opacity-neutral-darkest-40: rgba(11, 8, 3, 0.4);
+	--opacity-neutral-darkest-50: rgba(11, 8, 3, 0.5);
+	--opacity-neutral-darkest-60: rgba(11, 8, 3, 0.6);
+	--color-coffee-lightest: #eadfd6;
+	--color-coffee-lighter: #e0cbb4;
+	--color-coffee-light: #c29d84;
+	--color-coffee: #b58869;
+	--color-coffee-dark: #6f4e37;
+	--color-coffee-darker: #60432f;
+	--color-coffee-darkest: #443022;
+	--color-scheme-2-text: var(--color-neutral-darkest);
+	--color-scheme-2-background: var(--color-coffee);
+	--color-scheme-2-border: var(--opacity-neutral-darkest-15);
+	--color-scheme-2-accent: var(--color-neutral-darkest);
+	--color-scheme-2-foreground: var(--color-coffee);
+	--color-error-red: #7f1c1c;
+}
+.location-container{
+  max-width: 100%;
+}
+.footer-container{
+  max-width: 288px;
+
+}
+.location-title {
+  margin-bottom: 24px;
+  font-family: var(--second-family);
+font-weight: 400;
+font-size: 36px;
+line-height: 120%;
+letter-spacing: -0.01em;
+color: var(--color-scheme-1-text);
+}
+
+.location-text {
+  font-family: var(--font-family);
+font-weight: 400;
+font-size: 18px;
+line-height: 150%;
+color: var(--color-scheme-1-text);
+margin-bottom: 40px;
+}
+
+.location-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.location-label {
+  display: block;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-family: var(--font-family);
+font-weight: 600;
+font-size: 16px;
+line-height: 150%;
+color: var(--color-scheme-1-text);
+}
+
+.location-contacts {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
 .location {
   padding-top: var(--section-padding-mobile);

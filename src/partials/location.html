@@ -1,1 +1,71 @@
-<section>Location</section>
+<section class="location">
+  <div class="container location-container">
+    <div class="location-wrapper">
+
+      <div class="location-info">
+        <span class="location-label">Find</span>
+
+        <h2 class="location-title">Location</h2>
+
+        <p class="location-text">
+          Visit us at our cozy coffee shop.
+        </p>
+
+        <ul class="location-contacts">
+          <li class="location-item">
+             <svg width="24" height="24" aria-hidden="true">
+              <use href="../img/sprite.svg#icon-email"></use>
+            </svg>
+            <span class="contact-label">EMAIL</span>
+            <div class="contact-row">
+            <a href="mailto:hello@coffeejoy.com">hello@coffeejoy.com</a>
+            </div>
+          </li>
+
+          <li class="location-item">
+                <svg width="24" height="24" aria-hidden="true">
+              <use href="../img/sprite.svg#icon-phone"></use>
+            </svg>
+              <span class="contact-label">PHONE</span>
+              <div class="contact-row">
+            <a href="tel:+16175550123">+1 (555) 123-5321</a>
+            </div>
+          </li>
+
+          <li class="location-item">
+             <svg width="24" height="24" aria-hidden="true">
+              <use href="../img/sprite.svg#icon-location"></use>
+            </svg>
+            <span class="contact-label">OFFICE</span>
+            <div class="contact-row">
+            <span>
+              263 Newbury St, Boston, MA 02116, USA
+            </span>
+            </div>
+          </li>
+        </ul>
+
+        <a
+          class="location-link"
+          href="https://www.google.com/maps?q=263+Newbury+St,+Boston,+MA+02116,+USA"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Get Directions
+          <svg class="link-arrow" width="8" height="12" viewBox="0 0 8 12">
+            <use href="../img/sprite.svg#icon-yes"></use>
+          </svg>
+        </a>
+      </div>
+
+      <div class="location-map" id="location">
+        <iframe
+          src="https://www.google.com/maps?q=263+Newbury+St,+Boston,+MA+02116,+USA&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+
+    </div>
+  </div>
+</section>
