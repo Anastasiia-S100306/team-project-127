@@ -69,6 +69,7 @@
 
 .button-learn:active {
     background: rgba(11, 8, 3, 0.1);
+    color: rgb(11, 8, 3);
 }
 
 @media screen and (min-width: 768px) {
