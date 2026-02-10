@@ -1,15 +1,11 @@
 
 /*footer*/
-/* =========================== SECTION FOOTER =========================== */
-   
-
 .footer {
   padding: 24px 16px 77px 16px;
 width:100%;
 background-color: #c49a7a;
 font-family: "Quicksand", sans-serif;
 text-align: center;
-  padding: 40px 0; /* Базовий відступ для мобілки */
 }
 
 .footer-container {
@@ -62,24 +58,11 @@ font-size: 16px;
 line-height: 150%;
 color: var(--color-scheme-1-text);
 font-family: var(--font-family);
-}
 
 
 
-.footer-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  /* Структурний контейнер (Flexbox) для всього футера */
-}
-
-.footer-link {
-  position: relative; /* Необхідно для позиціювання декору */
 }
 .footer-nav a::before{
-
-/* Декоративний акцент під посиланнями — складна частина, яку задає TL */
-.footer-link::before {
   content: '';
   position: absolute;
   bottom: 6%;
@@ -195,19 +178,4 @@ height: 36px;
   }
   
 
-}
-  bottom: 0;
-}
-
-
-@media screen and (min-width: 768px) {
-  .footer {
-    padding: 60px 0; /* Збільшений відступ для планшетів */
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .footer {
-    padding: 80px 0;
-  }
 }
