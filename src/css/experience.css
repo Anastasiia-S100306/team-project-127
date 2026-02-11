@@ -4,6 +4,11 @@
   padding-bottom: 64px;
 }
 
+.experience-container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .experience-title {
   font-family: 'Aboreto', sans-serif;
   font-weight: 400;
@@ -29,6 +34,7 @@
 
 .experience-wrapper {
   display: block;
+  width: 100%;
 }
 .experience-list {
   display: grid;
