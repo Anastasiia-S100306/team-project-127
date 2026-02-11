@@ -105,6 +105,7 @@
                 rgba(0, 0, 0, 0.5)),
             url(../img/fon-desktop1x.jpg);
     }
+}
 
     @media (min-resolution: 192dpi) {
         .headline-section {
