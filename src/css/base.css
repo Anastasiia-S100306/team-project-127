@@ -3,25 +3,48 @@
   --secondary-font: "Aboreto", sans-serif;
 
   /* Colors - З макета CoffeeJoy */
+  --primary-text-color: #2e2f42;   /* Основний темний */
+  --accent-color: #434455;         /* Для описів та тексту */
   --primary-text-color: #2e2f42;
   /* Основний темний */
   --accent-color: #434455;
   /* Для описів та тексту */
   --white-color: #ffffff;
+  --bg-color: #f4f4fd;             /* Світлий фон секцій */
+  --brand-color: #4d5ae5;          /* Акцентний колір (кнопки/посилання) */
   --bg-color: #f4f4fd;
   /* Світлий фон секцій */
   --brand-color: #4d5ae5;
   /* Акцентний колір (кнопки/посилання) */
 
 
+  /* Subscribe Section */
+  
+  --subscribe-bg: #E0CBB4;
+  --section-padding-mobile: 64px;
+  
+  --form-gap-mobile: 24px;
+  --form-max-width: 288px;
+  --input-padding: 8px 12px;
+  
+  --button-side-padding: 24px;
+  
+  --element-margin-medium: 16px;
+
+  --subscribe-gap-title: 24px;
+  --subscribe-gap-text: 32px;
+  --subscribe-gap-form: 16px;
+
   font-family: var(--main-font);
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
+  
 
   color: var(--primary-text-color);
   background-color: var(--white-color);
 
+  
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -38,7 +61,9 @@ body {
   min-height: 100vh;
 }
 
+
 main {
+  flex-grow: 1; 
   flex-grow: 1;
 }
 
@@ -64,6 +89,7 @@ ol {
   margin: 0;
   padding: 0;
 }
+
 
 a {
   text-decoration: none;
