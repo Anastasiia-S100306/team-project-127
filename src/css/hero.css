@@ -2,22 +2,17 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)),
-        url(../img/fon-mobile1x.jpg);
+    background-image: url(../img/fon-mobile1x.jpg);
 }
 
 @media (min-resolution: 192dpi) {
     .headline-section {
-        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5),
-                rgba(0, 0, 0, 0.5)),
-            url(../img/fon-mobile2x.jpg);
+        background-image: url(../img/fon-mobile2x.jpg);
     }
 }
 
 .main-container {
-    width: 256px;
-    padding: 108px 0;
+    padding: 108px 20px 40px 32px;
 }
 
 .headline {
@@ -25,7 +20,6 @@
     font-size: 40px;
     line-height: 120%;
     text-align: left;
-    width: 100%;
     text-transform: uppercase;
     font-weight: 400;
     font-family: "Aboreto", sans-serif;
@@ -75,32 +69,21 @@
 
 @media screen and (min-width: 768px) {
     .headline-section {
-        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5),
-                rgba(0, 0, 0, 0.5)),
-            url(../img/fon-tablet1x.jpg);
+        background-image: url(../img/fon-tablet1x.jpg);
     }
 
 
     @media (min-resolution: 192dpi) {
         .headline-section {
-            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5),
-                    rgba(0, 0, 0, 0.5)),
-                url(../img/fon-tablet2x.jpg);
+            background-image: url(../img/fon-tablet2x.jpg);
         }
     }
 
 
     .main-container {
         width: 100%;
-        padding: 312px 176px 312px 32px;
-    }
-
-    .headline {
-        width: 560px;
-    }
-
-    .main-text {
-        width: 560px;
+        padding: 311px 32px;
+        
     }
 }
 
@@ -110,25 +93,24 @@
                 rgba(0, 0, 0, 0.5)),
             url(../img/fon-desktop1x.jpg);
     }
-}
 
-@media (min-resolution: 192dpi) {
-    .headline-section {
-        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5),
-                rgba(0, 0, 0, 0.5)),
-            url(../img/fon-desktop2x.jpg);
+    @media (min-resolution: 192dpi) {
+        .headline-section {
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5),
+                    rgba(0, 0, 0, 0.5)),
+                url(../img/fon-desktop2x.jpg);
+        }
     }
-<<<<<<< HEAD
+
+
+    .main-container {
+        padding: 259px 64px;
+
+        
+    }
+
+    .headline {
+        font-size: 56px;
+        text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    }
 }
-
-
-.main-container {
-    padding: 259px 816px 259px 64px;
-}
-
-.headline {
-    font-size: 56px;
-}
-=======
-
->>>>>>> main
