@@ -66,14 +66,13 @@
 
 /* Styles for Tablet devices */
 @media only screen and (min-width: 768px) {
-  .testimonials-container{
-    padding: 0 32px;
-  }
+  
   .reviews-list{
     flex-direction: row;
     flex-wrap: wrap;
     gap: 24px;
   }
+
 
   .review-item{
     display: flex;
@@ -95,12 +94,10 @@
 
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1440px) {
-  .testimonials-container{
-    padding: 0 64px;
-  }
+  
 .reviews-title {
     font-size: 48px;
-    max-width: 416px;
+    max-width: 100%;
 }
 .review-item {
     max-width: 310px;
