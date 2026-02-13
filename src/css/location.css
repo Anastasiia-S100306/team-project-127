@@ -56,8 +56,7 @@ background: var(--color-scheme-1-background);
 .location-container{
   width: 100%;
   max-width: 1312px;
-  padding-left: 64px;
-  padding-right: 64px;
+  
 }
 
 .location-title {
@@ -234,7 +233,10 @@ height: 307px;
 
 /* ====== TABLET ====== */
 @media screen and (min-width: 768px) and (max-width:1439px) {
-  
+  .location-container{
+    padding-left: 32px;
+    padding-right: 32px;
+  }
  
   .location-wrapper {
     display: flex;
@@ -313,6 +315,8 @@ height: 307px;
 @media screen and (min-width: 1440px) {
   .footer-container{
     max-width: 1440px;
+    padding-left:64px ;
+    padding-right: 64px;
   }
   .location-contacts{
     flex-direction: column;
