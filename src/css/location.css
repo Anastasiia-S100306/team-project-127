@@ -1,3 +1,8 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 .location {
   padding: 64px 16px;
 width: 100%;
@@ -49,7 +54,8 @@ background: var(--color-scheme-1-background);
 	--color-error-red: #7f1c1c;
 }
 .location-container{
-  max-width: 100%;
+  width: 100%;
+  max-width: 1312px;
   padding-left: 64px;
   padding-right: 64px;
 }
@@ -204,16 +210,13 @@ height: 307px;
 
 /* ====== TABLET ====== */
 @media screen and (min-width: 768px) and (max-width:1439px) {
-  .footer{
-    padding: 64px 32px;
-width: 100%;
-height: 100%;
-  }
+  
  
   .location-wrapper {
     display: flex;
     flex-direction: column;
     gap: 32px;
+    align-items: center;
     
     
   }
@@ -260,9 +263,10 @@ height: 100%;
   }
 
   .location-map {
-    width: 704px;
+    max-width: 704px;
+    width: 100%;
     height: 377px;
-    margin: 0 auto;
+   
   }
   .contact-row {
     display: flex;
@@ -310,7 +314,8 @@ height: 100%;
   }
 
   .location-map {
-    width: 869px;
+    width: 100%;
+    max-width: 869px;
 height: 697px;
 flex-grow: 0;
 flex-shrink: 0;
