@@ -105,6 +105,7 @@
 
   .experience-list {
     display: grid;
+    max-width: 1312px;
     grid-template-columns: repeat(3, 416px);
     gap: 32px;
     justify-content: center;
