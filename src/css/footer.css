@@ -118,7 +118,7 @@ margin-right: 40px;
   }
  
   .footer-nav {
-    flex-basis: 100%;
+    flex-basis: auto;
     display: flex;
     flex-direction: row;
     justify-content: center;

@@ -1,7 +1,6 @@
 .location {
   padding: 64px 16px;
 width: 100%;
-height: 100%;
 background: var(--color-scheme-1-background);
 }
 :root {
@@ -49,15 +48,17 @@ background: var(--color-scheme-1-background);
 	--color-scheme-2-foreground: var(--color-coffee);
 	--color-error-red: #7f1c1c;
 }
-.footer-container{
-  max-width: 288px;
-
+.location-container{
+  max-width: 100%;
+  padding-left: 64px;
+  padding-right: 64px;
 }
+
 .location-title {
   margin-bottom: 24px;
-  font-family: var(--second-family);
+font-family: var(--second-family);
 font-weight: 400;
-font-size: 36px;
+font-size: 48px;
 line-height: 120%;
 letter-spacing: -0.01em;
 color: var(--color-scheme-1-text);
@@ -202,7 +203,7 @@ height: 307px;
 }
 
 /* ====== TABLET ====== */
-@media screen and (min-width: 768px) and (max-width:1199px) {
+@media screen and (min-width: 768px) and (max-width:1439px) {
   .footer{
     padding: 64px 32px;
 width: 100%;
@@ -283,7 +284,7 @@ height: 100%;
 /* ====== DESKTOP ====== */
 @media screen and (min-width: 1440px) {
   .footer-container{
-    max-width: 1200px;
+    max-width: 1440px;
   }
   .location-contacts{
     flex-direction: column;
@@ -328,4 +329,7 @@ margin-top: 0;
   .contact-row{
     justify-content: flex-start;
   }
+}
+.location .location-contacts li:last-child .contact-row, .location .location-contacts li:last-child .contact-row span{
+  text-decoration: none;
 }
