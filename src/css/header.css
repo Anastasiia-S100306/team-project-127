@@ -3,14 +3,16 @@
 }
 
 .svg-coffee {
-  margin: 18px 0;
+  display: block;
   width: 84px;
+  height: auto;
 }
 
 .coffee-joy {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 18px 20px;
 }
 
 .nav-coffee {
