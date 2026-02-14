@@ -94,10 +94,15 @@
 
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1440px) {
-  
+  .testimonials-container{
+    padding: 0 64px;
+  }
+  .reviews-list{
+    justify-content: center;
+  }
 .reviews-title {
     font-size: 48px;
-    max-width: 100%;
+    max-width: 416px;
 }
 .review-item {
     max-width: 310px;
